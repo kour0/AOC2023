@@ -17,7 +17,7 @@ def part1(strings):
     for line in strings:
         result += int(firstdigit(line) + firstdigit(line[::-1]))
 
-    print(result)
+    print("Part1: " + str(result))
 
 
 def firstdigit(string):
@@ -33,7 +33,7 @@ def part2(strings):
         lowerdigit, upperdigit = fstandlastdigit(line)
         result += int(lowerdigit + upperdigit)
 
-    print(result)
+    print("Part2: " + str(result))
 
 
 def fstandlastdigit(string):
