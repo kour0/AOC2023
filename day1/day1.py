@@ -4,8 +4,6 @@ def main():
     with open("input.txt", "r") as f:
         lines = f.readlines()
 
-    print(lines)
-
     # On veut enlever les \n
     lines = [line.strip() for line in lines]
 
@@ -68,8 +66,6 @@ def fstandlastdigit(string):
             if upperpos != max(string.rfind(intdigit), upperpos):
                 upperpos = max(string.rfind(intdigit), upperpos)
                 upperdigit = str(intdigit)
-
-    print(lowerdigit, upperdigit)
 
     return lowerdigit, upperdigit
 
